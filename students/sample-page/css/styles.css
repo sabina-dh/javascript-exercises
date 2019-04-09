@@ -1,3 +1,27 @@
-.testClass {
-    background: blue;
+
+
+body {
+    margin: 50px;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url('https://cdn.pixabay.com/photo/2017/11/07/20/43/xmas-2928142_960_720.jpg')  no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+p {
+    font-weight: 800;
+    margin-top: 5em;
+
+}
+
+input {
+    height: 3em;
+    padding: .5em;
+    margin-bottom: 3em;
+}
+
+button {
+    margin: 2em;
 }

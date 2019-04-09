@@ -1,4 +1,30 @@
+$(document).ready(function () {
+    $('.addTask').click(function () {
+        let inputText = $('#input-field').val()
+        $('.addedTasks .task-list').append('<li>' + inputText + '<button class="markAsDone btn btn-success">Done</button></li>');
+        $('#input-field').val('');
+    })
+})
 
+
+$(document).on('click', '.markAsDone', function () {
+        let inputText = this.parentNode.firstChild.nodeValue;
+        $('.doneTasks .task-list').append('<li>' + inputText + '<button class="removeTask btn btn-danger">Remove</button></li>');
+        this.parentNode.remove();
+})
+
+
+$(document).on('click', '.removeTask',function () {
+        this.parentNode.remove();
+})
+
+
+
+
+
+
+/* 
+$('body').addClass('testClass')
 
 
 console.log('This is the line of code that is ran first when the page loads');
@@ -26,3 +52,4 @@ function nextFunction() {
     console.log('One this line is reached, the value of i is: ' + 0)
 }
 
+ */
